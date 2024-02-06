@@ -1,7 +1,5 @@
 package com.numpyninja.lmsmessageservice.service;
 
-import com.numpyninja.lmsmessageservice.config.WebClientConfig;
-import com.numpyninja.lmsmessageservice.model.User;
 import com.numpyninja.lmsmessageservice.model.UserRoleProgramBatchMap;
 import com.numpyninja.lmsmessageservice.repository.UserRoleProgramBatchMapRepository;
 import lombok.RequiredArgsConstructor;

@@ -2,15 +2,12 @@ package com.numpyninja.lmsmessageservice.service;
 
 import com.numpyninja.lmsmessageservice.dto.AnnouncementRequestDto;
 import com.numpyninja.lmsmessageservice.dto.AnnouncementResponseDto;
-import com.numpyninja.lmsmessageservice.dto.GroupResponseDto;
 import com.numpyninja.lmsmessageservice.model.Announcement;
-import com.numpyninja.lmsmessageservice.model.Group;
 import com.numpyninja.lmsmessageservice.repository.AnnouncementRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
-import java.util.UUID;
 
 @Service
 @Slf4j

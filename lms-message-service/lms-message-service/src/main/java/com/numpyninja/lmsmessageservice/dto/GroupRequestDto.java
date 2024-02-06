@@ -11,5 +11,5 @@ import lombok.NoArgsConstructor;
 public class GroupRequestDto {
     private String groupName;
     private String description;
-    //private List<User> members;
+
 }

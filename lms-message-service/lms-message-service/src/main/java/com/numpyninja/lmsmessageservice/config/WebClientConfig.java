@@ -28,7 +28,7 @@ public class WebClientConfig {
         return ExchangeFilterFunction.ofRequestProcessor(clientRequest -> {
             // Clone the original headers and add the authorization header
             HttpHeaders headers = new HttpHeaders();
-            clientRequest.headers().forEach((name, values) -> headers.addAll(name, values));
+            clientRequest.headers().forEach(headers::addAll);
             headers.add(HttpHeaders.AUTHORIZATION, "Bearer " + authToken);
             // Create a new ClientRequest with the modified headers
             ClientRequest newRequest = ClientRequest.from(clientRequest)

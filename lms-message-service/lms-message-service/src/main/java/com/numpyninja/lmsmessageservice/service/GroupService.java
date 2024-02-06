@@ -9,7 +9,6 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
-import java.util.UUID;
 
 @Service
 @Slf4j
@@ -25,7 +24,6 @@ public class GroupService {
      */
     public GroupResponseDto createNNGroup (GroupRequestDto groupRequestDto){
         var groupResponseDto = new GroupResponseDto();
-        //groupResponseDto.setGroupId(UUID.randomUUID().node());
         groupResponseDto.setGroupName(groupRequestDto.getGroupName());
         groupResponseDto.setDescription(groupRequestDto.getDescription());
         groupResponseDto.setMembers(userRepository.findAll());
